@@ -20,8 +20,8 @@ permalink: none
 plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "Bipin's Bubble"
-description: "a place for my thoughts, ideas and stuffs I read"
+title: "Bipin's"
+description: "Bipin's Bubble"
 author: "Bipin Lekhak"
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
