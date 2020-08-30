@@ -15,16 +15,14 @@ menu:
 social:
   - { icon: "github", link: "https://github.com/bipin-lekhak" }
   - { icon: "twitter", link: "https://twitter.com/NobodyBipin" }
-  # - { icon: "linkedin", link: "" }
-  # - { icon: "envelope", link: "" }
+  - { icon: "linkedin", link: "https://www.linkedin.com/in/bipin-lekhak/" }
+  # - { icon: "envelope", link: "mailto:" }
   # - { icon: "rss-square", link: "" }
 # Customize site text
-# pagination:
-#   next_page: "Newer"
-#   previous_page: "Older"
-
-# sharing_button_prompt: "Feel free to share!"
-
+pagination:
+  next_page: "Newer"
+  previous_page: "Older"
+sharing_button_prompt: "Feel free to share!"
 # related_posts: "You may also enjoy:"
 
 # post_date_prefix: "Written on"
