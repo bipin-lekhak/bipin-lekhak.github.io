@@ -3,6 +3,4 @@ layout: page
 title: Contact
 ---
 
-## ToDo
-
-Stay Tuned
+Find me here: ... 
