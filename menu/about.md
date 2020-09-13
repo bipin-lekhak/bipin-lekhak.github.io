@@ -17,7 +17,7 @@ I like to confuse myself and remain confused.
 
 ## What I do
 
-Currently, working in the field of Machine Learning/Data Science.
+Since I completed undergrad in 2018, have been working in the field of Machine Learning/Data Science.
 
 ## Why this blog
 
@@ -28,9 +28,10 @@ inhabitants of this planet will help me learn, solve and satisfy my curiosity.
 ## Areas of Interest
 
 - Statistics, Data Science, Machine Learning, Signal Processing
+- Curios about Physical and Life Sciences
 - Football, Tennis and Cricket
-- Anthroplogy, history and sociology (as much as I understand it)
+- Dylan, Beatles, Queen
 
 *Created using [Lagrange](https://github.com/LeNPaul/Lagrange) theme for
-  [Jeykill](https://github.com/jekyll/jekyll) and hosted in [GitHub
+  [Jekyll](https://github.com/jekyll/jekyll) and hosted in [GitHub
   Pages](https://pages.github.com/)*
