@@ -4,7 +4,7 @@ disqus:
   disqus_shortname: "https-bipin-lekhak-github-io"
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-ID: ""
+google-ID: "G-GGQGXQ43E9"
 
 menu:
   - { name: "About", path: "menu", url: "about.html" }
