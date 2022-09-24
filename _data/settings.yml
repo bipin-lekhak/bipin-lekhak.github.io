@@ -14,7 +14,7 @@ menu:
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
   - { icon: "github", link: "https://github.com/bipin-lekhak" }
-  - { icon: "twitter", link: "https://twitter.com/NobodyBipin" }
+  - { icon: "twitter", link: "https://twitter.com/bipin_lekhak" }
   - { icon: "linkedin", link: "https://www.linkedin.com/in/bipin-lekhak/" }
   # - { icon: "envelope", link: "mailto:" }
   # - { icon: "rss-square", link: "" }
