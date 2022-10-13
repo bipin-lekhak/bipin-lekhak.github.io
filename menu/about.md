@@ -17,6 +17,8 @@ I like to confuse myself and remain confused.
 
 ## What I do
 
+I am currently a PhD student at Rochester Institute of Engineering's
+Computational Biology Lab with advisor Dr. Linwei Wang.
 Since I completed undergrad in 2018, have been working in the field of Machine Learning/Data Science.
 
 ## Why this blog
@@ -27,7 +29,8 @@ inhabitants of this planet will help me learn, solve and satisfy my curiosity.
 
 ## Areas of Interest
 
-- Statistics, Data Science, Machine Learning, Signal Processing
+- Statistics, Data Science, Machine Learning, Signal Processing, Dynamical
+  Systems, Intervention modelling.
 - Curios about Physical and Life Sciences
 - Football, Tennis and Cricket
 - Dylan, Beatles, Queen
