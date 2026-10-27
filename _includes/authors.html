@@ -1,0 +1,4 @@
+{%- for a in include.authors -%}
+{%- if a == site.author.name -%}<strong class="me">{{ a }}</strong>{%- else -%}{{ a }}{%- endif -%}
+{%- unless forloop.last -%}, {% endunless -%}
+{%- endfor -%}

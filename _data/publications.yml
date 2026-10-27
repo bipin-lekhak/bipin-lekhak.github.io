@@ -1,0 +1,33 @@
+# Publications shown on the home page. `me` marks the site owner in `authors`.
+# Sections render in the order they appear here.
+
+- section: "Manuscripts under review"
+  items:
+    - title: "iASIDE: Identifiable, Adaptable, and Separable Interventional Dynamics"
+      authors: ["Bipin Lekhak", "Linwei Wang"]
+      venue: "Manuscript under review"
+      year: 2026
+      summary: >-
+        A latent-dynamics framework that predicts how a system responds to hypothetical
+        interventions. It establishes identifiability of the latent interventional dynamics by
+        conditioning non-stationary parameters on history, and separates native from response
+        dynamics so that optimisation can reach the identifiable solution.
+
+- section: "Conference papers"
+  items:
+    - title: "ProReGen: Progressive Residual Generation under Attribute Correlations"
+      authors: ["Ruby Shrestha", "Ajay Gopi", "Casey Meisenzahl", "Bipin Lekhak", "Linwei Wang"]
+      venue: "International Conference on Learning Representations (ICLR)"
+      short: "ICLR 2026"
+      year: 2026
+      links:
+        - { label: "OpenReview", url: "https://openreview.net/forum?id=2LzYaW032Q" }
+        - { label: "PDF", url: "https://openreview.net/pdf?id=2LzYaW032Q" }
+
+    - title: "Novel In-Home Cardiac Monitoring for Heart Failure Patients"
+      authors: ["Bipin Lekhak", "Ryan Missel", "Dillon Dzikowicz", "Solomiya Rachynska", "Wojciech Zareba", "Linwei Wang"]
+      venue: "Computing in Cardiology (CinC)"
+      short: "CinC 2023"
+      year: 2023
+      links:
+        - { label: "IEEE Xplore", url: "https://ieeexplore.ieee.org/abstract/document/10363960" }

@@ -1,28 +1,66 @@
-# Site Build Settings
+# Site settings
+title: "Bipin Lekhak"
+tagline: "PhD candidate, causal machine learning for time series"
+description: >-
+  Bipin Lekhak is a PhD candidate at the Rochester Institute of Technology working on
+  causal machine learning for time series: latent-dynamics models that predict how
+  patients and physical systems respond to interventions.
+url: "https://bipinlekhak.com.np"
+baseurl: ""
+lang: en
 
-# Jekyll-paginate-v2 configuration
-#  pagination:
-#   enabled: true
-#   per_page: 5
-#   permalink: '/page/:num/'
-#   title: ':title - page :num of :max'
-#   limit: 0
-#   sort_field: 'date'
-#   sort_reverse: true
+author:
+  name: "Bipin Lekhak"
+  email: "bl1282@rit.edu"
 
-# jekyll-paginate configuration
-paginate: 5
+# Profiles, used by the header links and by jekyll-seo-tag
+social:
+  name: "Bipin Lekhak"
+  links:
+    - "https://github.com/bipin-lekhak"
+    - "https://www.linkedin.com/in/bipin-lekhak/"
+    - "https://scholar.google.com/citations?user=z8T6GewAAAAJ"
+    - "https://openreview.net/profile?id=~Bipin_Lekhak2"
 
-# Build settings
+github_username: bipin-lekhak
+linkedin_username: bipin-lekhak
+scholar_url: "https://scholar.google.com/citations?user=z8T6GewAAAAJ"
+openreview_url: "https://openreview.net/profile?id=~Bipin_Lekhak2"
+cv_pdf: /assets/cv/Bipin_Lekhak_CV.pdf
+# Square portrait for the home page, e.g. /assets/img/profile.jpg; empty hides it
+photo:
+
+# Google Analytics 4 measurement ID, carried over from the old site; empty to turn off
+google_analytics: "G-GGQGXQ43E9"
+
+# Build settings (GitHub Pages builds this with the github-pages gem)
 markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
 highlighter: rouge
-permalink: none
-plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title: "Bipin's"
-description: "Bubble"
-author: "Bipin Lekhak"
-# RSS 2.0 can be used instead of Atom by uncommenting following two lines
-#feed:
-#  path: rss-feed.xml
+# Old notes keep their URLs (/books/linalg.html, /paper/vae.html, ...); they are listed only
+# on the unlinked /archive/ page
+permalink: none
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      math: true
+      sitemap: false
+      noindex: true
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

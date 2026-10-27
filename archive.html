@@ -1,0 +1,48 @@
+---
+layout: default
+title: Archive
+description: Older reading notes on sequential latent-variable models and on the Deep Learning book.
+permalink: /archive/
+sitemap: false
+noindex: true
+---
+
+<header class="page-head">
+  <h1>Archive</h1>
+  <p class="lede">
+    Older reading notes, kept as written and not linked from the rest of the site.
+  </p>
+</header>
+
+<section class="section">
+  <h2 class="section-title">Sequential latent-variable models &middot; 2022</h2>
+  <p>Paper notes on variational inference and its extensions to time series and state-space models.</p>
+  <ul class="note-list">
+    {% assign paper_notes = site.categories.paper | reverse %}
+    {% for post in paper_notes %}
+    {% assign words = post.content | strip_html | number_of_words %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="note-meta">{{ post.date | date: '%B %-d, %Y' }} &middot; {{ words | divided_by: 200 | at_least: 1 }} min read</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="section">
+  <h2 class="section-title">The Deep Learning book &middot; 2020</h2>
+  <p>
+    Notes on the mathematical background chapters of <a href="https://www.deeplearningbook.org/"><em>Deep Learning</em></a>
+    by Goodfellow, Bengio and Courville: linear algebra, probability and information theory.
+  </p>
+  <ul class="note-list">
+    {% assign book_notes = site.categories.books | reverse %}
+    {% for post in book_notes %}
+    {% assign words = post.content | strip_html | number_of_words %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="note-meta">{{ post.date | date: '%B %-d, %Y' }} &middot; {{ words | divided_by: 200 | at_least: 1 }} min read</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

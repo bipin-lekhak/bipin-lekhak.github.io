@@ -1,4 +1,286 @@
 ---
-layout: home
-title: Home
+layout: default
+redirect_from:
+  - /menu/about.html
+  - /menu/contact.html
 ---
+
+<section id="about" class="hero{% if site.photo and site.photo != "" %} has-photo{% endif %}">
+  <div>
+    <h1>Bipin Lekhak</h1>
+    <p class="role">
+      <strong>PhD candidate</strong>, Computing and Information Sciences<br>
+      Rochester Institute of Technology &middot; Computational Biomedicine Laboratory
+    </p>
+
+    <p class="bio">
+      I work on <strong>causal machine learning for time series</strong>. I build latent-variable
+      models that learn a system's dynamics well enough to predict how it will respond to
+      interventions: a tumour under chemo- or radiotherapy, a patient in intensive care, a physical
+      system observed only through video. My models separate a system's native dynamics from its
+      response to treatment, are identifiable, and adapt to each individual from its own history
+      through meta-learning.
+    </p>
+    <p class="bio">
+      I am advised by <a href="https://www.rit.edu/cblwang/">Prof. Linwei Wang</a>. Before the PhD
+      I spent four years as a machine learning engineer at Fusemachines in Kathmandu, building
+      medical image segmentation, 3D shape reconstruction and forecasting systems.
+    </p>
+
+    <p class="callout">
+      I am looking for <strong>research internships for Summer 2027</strong> in causal machine
+      learning, time-series modelling and machine learning for health.
+    </p>
+
+    <ul class="contact">
+      <li>
+        <a href="mailto:{{ site.author.email }}">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg>
+          {{ site.author.email }}
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.cv_pdf | relative_url }}">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/><path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/></svg>
+          CV (PDF)
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/{{ site.github_username }}">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg>
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.scholar_url }}">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 0 5.75l8 4.25 6-3.19v4.44h1.5V6l.5-.25L8 1.5z"/><path d="M3 8.6v2.65c0 1.25 2.24 2.75 5 2.75s5-1.5 5-2.75V8.6l-5 2.65-5-2.65z"/></svg>
+          Google Scholar
+        </a>
+      </li>
+      <li>
+        <a href="{{ site.openreview_url }}">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 1.5h12A1.5 1.5 0 0 1 15.5 3v8a1.5 1.5 0 0 1-1.5 1.5H6.5L3 15.5v-3H2A1.5 1.5 0 0 1 .5 11V3A1.5 1.5 0 0 1 2 1.5zm2 3.25v1.5h8v-1.5H4zm0 3v1.5h5.5v-1.5H4z"/></svg>
+          OpenReview
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  {% if site.photo and site.photo != "" %}
+  <div class="hero-photo">
+    <img src="{{ site.photo | relative_url }}" alt="Portrait of Bipin Lekhak" width="160" height="160">
+  </div>
+  {% endif %}
+</section>
+
+<section id="news" class="section">
+  <h2 class="section-title">News</h2>
+  <ul class="news">
+    {% for item in site.data.news %}
+    <li><span class="when">{{ item.date }}</span><span>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="research" class="section">
+  <h2 class="section-title">Research</h2>
+  <p class="lede">
+    How will a system respond to an intervention it has not yet received? I build models that
+    answer this from observational time series, and the guarantees needed to trust their answers.
+  </p>
+
+  <article class="theme">
+    <h3>Interventional latent dynamics</h3>
+    <p>
+      Forecasting a patient's trajectory under a candidate treatment plan needs two things at once:
+      the patient's own disease dynamics, and how those dynamics change under treatment.
+      <strong>ASIDE</strong> and its successor <strong>iASIDE</strong> model these as separate
+      components of a latent ordinary differential equation. Meta-learned encoders read a subject's
+      history and infer the parameters of each component, so the model adapts to every individual
+      without retraining. iASIDE shows that the latent interventional dynamics are identifiable,
+      and gives a separable formulation that reaches the identifiable solution in practice.
+    </p>
+
+    <figure class="diagram">
+      <div class="diagram-scroll">
+        <svg viewBox="0 0 720 262" role="img" aria-labelledby="dg-title dg-desc">
+          <title id="dg-title">Schematic of the separable interventional dynamics model</title>
+          <desc id="dg-desc">The observed history feeds three encoders: an initial-state encoder that outputs the latent state, a native meta-encoder that outputs native parameters, and a response meta-encoder that outputs response parameters. These drive a latent ODE whose derivative is the sum of a native term and a treatment-response term. Planned treatments enter the ODE, which a decoder turns into a forecast.</desc>
+          <defs>
+            <marker id="dg-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" class="dg-head"/>
+            </marker>
+          </defs>
+
+          <!-- history -->
+          <rect x="6" y="94" width="120" height="72" rx="8" class="dg-box"/>
+          <text x="66" y="120" text-anchor="middle" class="dg-text dg-strong">Observed history</text>
+          <text x="66" y="140" text-anchor="middle" class="dg-math">x<tspan dy="4" font-size="11">1</tspan><tspan dy="-4"> … x</tspan><tspan dy="4" font-size="11">t</tspan></text>
+          <text x="66" y="157" text-anchor="middle" class="dg-math">a<tspan dy="4" font-size="11">1</tspan><tspan dy="-4"> … a</tspan><tspan dy="4" font-size="11">t</tspan></text>
+
+          <!-- encoders -->
+          <rect x="164" y="20" width="164" height="48" rx="8" class="dg-box"/>
+          <text x="246" y="40" text-anchor="middle" class="dg-text">Initial-state encoder</text>
+          <text x="246" y="58" text-anchor="middle" class="dg-small">latent state z<tspan dy="3" font-size="9">t</tspan></text>
+
+          <rect x="164" y="106" width="164" height="48" rx="8" class="dg-box native"/>
+          <text x="246" y="126" text-anchor="middle" class="dg-text">Native meta-encoder</text>
+          <text x="246" y="144" text-anchor="middle" class="dg-small">parameters c<tspan dy="3" font-size="9">n</tspan></text>
+
+          <rect x="164" y="192" width="164" height="48" rx="8" class="dg-box response"/>
+          <text x="246" y="212" text-anchor="middle" class="dg-text">Response meta-encoder</text>
+          <text x="246" y="230" text-anchor="middle" class="dg-small">parameters c<tspan dy="3" font-size="9">a</tspan></text>
+
+          <path d="M126,130 C150,130 144,44 162,44" class="dg-line" marker-end="url(#dg-arrow)"/>
+          <path d="M126,130 L162,130" class="dg-line" marker-end="url(#dg-arrow)"/>
+          <path d="M126,130 C150,130 144,216 162,216" class="dg-line" marker-end="url(#dg-arrow)"/>
+
+          <!-- latent ODE -->
+          <rect x="362" y="74" width="212" height="112" rx="10" class="dg-ode"/>
+          <text x="468" y="99" text-anchor="middle" class="dg-text dg-strong">Separable latent ODE</text>
+          <text x="468" y="131" text-anchor="middle" class="dg-math">ż = <tspan class="dg-native">f(z; c<tspan dy="4" font-size="11">n</tspan><tspan dy="-4">)</tspan></tspan> + <tspan class="dg-response">g(z, a; c<tspan dy="4" font-size="11">a</tspan><tspan dy="-4">)</tspan></tspan></text>
+          <text x="432" y="153" text-anchor="middle" class="dg-small dg-native">native</text>
+          <text x="512" y="153" text-anchor="middle" class="dg-small dg-response">response</text>
+          <text x="468" y="174" text-anchor="middle" class="dg-small">integrated over the horizon</text>
+
+          <path d="M328,44 C348,44 342,98 360,98" class="dg-line" marker-end="url(#dg-arrow)"/>
+          <path d="M328,130 L360,130" class="dg-line" marker-end="url(#dg-arrow)"/>
+          <path d="M328,216 C348,216 342,162 360,162" class="dg-line" marker-end="url(#dg-arrow)"/>
+
+          <!-- planned treatments -->
+          <text x="468" y="30" text-anchor="middle" class="dg-small">planned treatments a<tspan dy="3" font-size="9">t+1</tspan><tspan dy="-3"> …</tspan></text>
+          <path d="M468,38 L468,72" class="dg-line" marker-end="url(#dg-arrow)"/>
+
+          <!-- decoder -->
+          <rect x="606" y="100" width="108" height="60" rx="8" class="dg-box"/>
+          <text x="660" y="124" text-anchor="middle" class="dg-text dg-strong">Decoder</text>
+          <text x="660" y="144" text-anchor="middle" class="dg-small">forecast x<tspan dy="3" font-size="9">t+1</tspan><tspan dy="-3"> …</tspan></text>
+          <path d="M574,130 L604,130" class="dg-line" marker-end="url(#dg-arrow)"/>
+        </svg>
+      </div>
+      <figcaption>
+        The separable model. Encoders read the observed history and infer an initial latent state
+        and the parameters of the native (blue) and response (orange) dynamics. The latent ODE is
+        integrated forward under a planned sequence of treatments and decoded into a forecast.
+      </figcaption>
+    </figure>
+
+    <p>
+      Evaluated on tumour growth under chemo- and radiotherapy, MIMIC-III intensive-care data and
+      videos of forced pendulums, with and without time-varying confounding, against established
+      baselines such as the Causal Transformer, CRN and RMSN.
+    </p>
+    <ul class="keywords">
+      <li>Neural ODEs</li><li>Meta-learning</li><li>Identifiability</li>
+      <li>Variational inference</li><li>Time-varying confounding</li>
+    </ul>
+  </article>
+
+  <article class="theme">
+    <h3>Treatment effects over time</h3>
+    <p>
+      Separating native from response dynamics gives a natural handle on causal effects. With
+      collaborators I am developing temporal versions of meta-learners, the X- and R-learners, that
+      use this structure to estimate how outcomes would differ under alternative treatment
+      sequences. This work also corrects for treatment-assignment bias with weighting and invariant
+      representations.
+    </p>
+    <ul class="keywords">
+      <li>Potential outcomes</li><li>Meta-learners</li><li>Inverse probability weighting</li>
+    </ul>
+  </article>
+
+  <article class="theme">
+    <h3>Cardiac monitoring at home</h3>
+    <p>
+      With the University of Rochester Medical Center, I analysed data from a sensor-equipped
+      toilet seat that records cardiac signals at home. The study, funded by the NIH, followed
+      heart-failure patients after hospital discharge. We documented when and why in-home deployments
+      fail, measured adherence, and showed that the seat's physiological signals predict 21-day
+      hospitalisation (AUC 0.74).
+    </p>
+    <ul class="keywords">
+      <li>Digital health</li><li>Wearable and ambient sensing</li><li>Heart failure</li>
+    </ul>
+  </article>
+</section>
+
+<section id="publications" class="section">
+  <h2 class="section-title">Publications</h2>
+  {% for group in site.data.publications %}
+  <div class="pub-group">
+    <h3>{{ group.section }}</h3>
+    <ol class="pubs">
+      {% for p in group.items %}
+      <li class="pub">
+        {% if p.short %}<span class="pub-venue">{{ p.short }}</span>{% else %}<span class="pub-venue review">Under review</span>{% endif %}
+        <p class="pub-title">{{ p.title }}</p>
+        <p class="pub-authors">{% include authors.html authors=p.authors %}</p>
+        {% if p.short %}<p class="pub-where">{{ p.venue }}, {{ p.year }}</p>{% endif %}
+        {% if p.summary %}<p class="pub-summary">{{ p.summary }}</p>{% endif %}
+        {% if p.links %}
+        <div class="pub-links">
+          {% for l in p.links %}<a href="{{ l.url }}">{{ l.label }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+  {% endfor %}
+</section>
+
+<section id="experience" class="section">
+  <h2 class="section-title">Experience</h2>
+  <ul class="timeline">
+    <li>
+      <span class="when">2022 – present</span>
+      <div>
+        <p class="what">Graduate Research Assistant</p>
+        <p class="where">Computational Biomedicine Laboratory, Rochester Institute of Technology</p>
+        <p class="detail">Interventional latent dynamics, treatment-effect estimation over time, and in-home cardiac monitoring.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">Fall 2025</span>
+      <div>
+        <p class="what">Teaching Assistant, GCCIS-820 Quantitative Foundations</p>
+        <p class="where">Rochester Institute of Technology</p>
+        <p class="detail">Graduate course on linear algebra, optimisation and statistical inference for computing PhD students.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2018 – 2022</span>
+      <div>
+        <p class="what">Machine Learning Engineer</p>
+        <p class="where">Fusemachines, Kathmandu</p>
+        <p class="detail">Medical image segmentation (U-Net, Mask R-CNN), 3D reconstruction from statistical shape models, and multi-stage and Bayesian sales forecasting.</p>
+      </div>
+    </li>
+  </ul>
+
+  <h3 class="subhead">Education</h3>
+  <ul class="timeline">
+    <li>
+      <span class="when">2022 – Fall 2027 (expected)</span>
+      <div>
+        <p class="what">Ph.D., Computing and Information Sciences</p>
+        <p class="where">Rochester Institute of Technology</p>
+        <p class="detail">Dissertation proposal, defended July 2026: <em>Learning Dynamics for Forecasting Future Trajectories under External Interventions</em>.</p>
+      </div>
+    </li>
+    <li>
+      <span class="when">2014 – 2018</span>
+      <div>
+        <p class="what">B.E., Electronics and Communication Engineering</p>
+        <p class="where">Pulchowk Campus, Institute of Engineering, Tribhuvan University</p>
+      </div>
+    </li>
+  </ul>
+</section>

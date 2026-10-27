@@ -1,39 +1,31 @@
 ---
 layout: default
 ---
+{% assign words = content | strip_html | number_of_words %}
+{% assign minutes = words | divided_by: 200 | at_least: 1 %}
+{% if page.categories contains 'paper' %}{% assign series = 'Paper notes' %}{% else %}{% assign series = 'Deep Learning book notes' %}{% endif %}
+<article class="post">
+  <header class="post-head">
+    <p class="eyebrow">
+      <a href="{{ '/archive/' | relative_url }}">{{ series }}</a>
+      <span aria-hidden="true">&middot;</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+      <span aria-hidden="true">&middot;</span>
+      {{ minutes }} min read
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.tags.size > 0 %}
+    <ul class="tags" aria-label="Topics">
+      {% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </header>
 
-<h1>
-  {{ page.title }}
-</h1>
+  <div class="prose">
+    {{ content }}
+  </div>
 
-{% if page.image %}
-  <img src="{{ site.github.url }}/assets/img/{{ page.image }}">
-{% endif %}
-
-{{ content }}
-
-<span class="post-date">
-  {{ site.data.settings.post_date_prefix }}
-  {% assign d = page.date | date: "%-d"  %}
-  {{ page.date | date: "%B" }}
-  {% case d %}
-    {% when '1' or '21' or '31' %}{{ d }}st
-    {% when '2' or '22' %}{{ d }}nd
-    {% when '3' or '23' %}{{ d }}rd
-    {% else %}{{ d }}th{% endcase %},
-  {{ page.date | date: "%Y" }}
-  by
-  {% if page.author %}
-    {{ page.author }}
-  {% else %}
-    {{ site.author }}
-  {% endif %}
-</span>
-
-{% include social-sharing.html %}
-
-{% include related-posts.html %}
-
-{% if site.data.settings.disqus.comments %}
-  {% include disqus.html %}
-{% endif %}
+  <footer class="post-foot">
+    <a href="{{ '/archive/' | relative_url }}">&larr; Archive</a>
+  </footer>
+</article>

@@ -1,0 +1,13 @@
+# Newest first. `text` is Markdown.
+- date: "Fall 2026"
+  text: "New manuscript on **identifiable interventional dynamics** (iASIDE) is under review."
+- date: "Jul 2026"
+  text: "Defended my dissertation proposal, *Learning Dynamics for Forecasting Future Trajectories under External Interventions*, and became a PhD candidate."
+- date: "Early 2026"
+  text: "**ProReGen**, on image generation under correlated attributes, accepted at **ICLR 2026**."
+- date: "Fall 2025"
+  text: "Teaching assistant for **GCCIS-820 Quantitative Foundations** at RIT."
+- date: "2023"
+  text: "Paper on **in-home cardiac monitoring for heart-failure patients** published at Computing in Cardiology 2023."
+- date: "Aug 2022"
+  text: "Started my PhD in Computing and Information Sciences at RIT, in the Computational Biomedicine Laboratory."
