@@ -28,7 +28,7 @@ scholar_url: "https://scholar.google.com/citations?user=z8T6GewAAAAJ"
 openreview_url: "https://openreview.net/profile?id=~Bipin_Lekhak2"
 cv_pdf: /assets/cv/Bipin_Lekhak_CV.pdf
 # Square portrait for the home page, e.g. /assets/img/profile.jpg; empty hides it
-photo:
+photo: /assets/img/profile.jpg
 
 # Google Analytics 4 measurement ID, carried over from the old site; empty to turn off
 google_analytics: "G-GGQGXQ43E9"

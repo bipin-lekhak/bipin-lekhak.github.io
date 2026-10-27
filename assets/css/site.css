@@ -141,8 +141,12 @@ main { padding-bottom: 3rem; }
 .hero p.bio { margin: 0 0 1rem; }
 
 .hero-photo img {
-  width: 10rem; height: 10rem; object-fit: cover; border-radius: 50%;
+  display: block; width: 10rem; height: 10rem; object-fit: cover; border-radius: 50%;
   border: 1px solid var(--rule);
+}
+@media (max-width: 39.99rem) {
+  .hero-photo { order: -1; }
+  .hero-photo img { width: 7.5rem; height: 7.5rem; }
 }
 
 .callout {
